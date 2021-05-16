@@ -8,7 +8,7 @@ import javax.swing.*;
  * @author Matheus Gouvêa and Daniel Douglas
  * @ version 2021.04.05
  */
-public class Map 
+public final class Map 
 {
     // instance variables
     private JFrame frame;
@@ -42,6 +42,7 @@ public class Map
         //quit button
         JButton button = new JButton("Quit");
         button.addActionListener(new ActionListener() {
+                @Override
                 public void actionPerformed(ActionEvent e) { frame.dispose();
                 }
             });

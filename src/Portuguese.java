@@ -83,48 +83,82 @@ public class Portuguese implements InterfaceLang {
     // estes são os itens que podem ser encontrados aleatoriamente.
     @Override
     public String[][] items() {
-        String[][] itens = new String[13][2];
+        String[][] items = new String[24][2];
 
-        itens[0][0] = "cama";
-        itens[0][1] = "a mais confortável do mundo";
+        items[0][0] = "cama";
+        items[0][1] = "a mais confortável do mundo";
 
-        itens[1][0] = "laptop";
-        itens[1][1] = "poderoso, mas limitado";
+        items[1][0] = "laptop";
+        items[1][1] = "poderoso, mas limitado";
 
-        itens[2][0] = "celular";
-        itens[2][1] = "iphone top de linha";
+        items[2][0] = "celular";
+        items[2][1] = "iphone top de linha";
 
-        itens[3][0] = "tapete";
-        itens[3][1] = "muito macio e aconchegante";
+        items[3][0] = "tapete";
+        items[3][1] = "muito macio e aconchegante";
 
-        itens[4][0] = "cortina";
-        itens[4][1] = "ajuda a esconder a luz do sol";
+        items[4][0] = "cortina";
+        items[4][1] = "ajuda a esconder a luz do sol";
 
-        itens[5][0] = "mesa";
-        itens[5][1] = "com um resto de comida";
+        items[5][0] = "mesa";
+        items[5][1] = "com alguns acessórios";
 
-        itens[6][0] = "quadro";
-        itens[6][1] = "uma pintura de Vincent Van Gogh";
+        items[6][0] = "quadro";
+        items[6][1] = "uma pintura de Vincent Van Gogh";
 
-        itens[7][0] = "cadeira";
-        itens[7][1] = "muito bom para a coluna e contribui para a postura";
+        items[7][0] = "cadeira";
+        items[7][1] = "muito bom para a coluna e contribui para a postura";
 
-        itens[8][0] = "ar condicionado";
-        itens[8][1] = "ninguém pode viver neste calor";
+        items[8][0] = "ar condicionado";
+        items[8][1] = "ninguém pode viver neste calor";
 
-        itens[9][0] = "estante";
-        itens[9][1] = "livros lindos estão aqui";
+        items[9][0] = "estante";
+        items[9][1] = "livros lindos estão aqui";
 
-        itens[10][0] = "tv";
-        itens[10][1] = "está passando o filme 'Minha Mãe é Uma Peça', filmaço do Paulo Gustavo";
+        items[10][0] = "tv";
+        items[10][1] = "está passando o filme 'Minha Mãe é Uma Peça', filmaço do Paulo Gustavo";
 
-        itens[11][0] = "frigobar";
-        itens[11][1] = "uma bebida vai bem, mas o preço é absurdo";
+        items[11][0] = "frigobar";
+        items[11][1] = "uma bebida vai bem, mas o preço é absurdo";
 
-        itens[12][0] = "cofre";
-        itens[12][1] = "onde guardamos itens preciosos";
+        items[12][0] = "cofre";
+        items[12][1] = "onde guardamos itens preciosos";
+        
+        items[13][0] = "mochila";
+        items[13][1] = "ela parece velha, mas está bem volumosa";
+        
+        items[14][0] = "bolsa";
+        items[14][1] = "possui detalhes em ouro, deve valer uma fortuna";
+        
+        items[15][0] = "copo";
+        items[15][1] = "alguém bebeu um suco de laranja aqui ontem";
+        
+        items[16][0] = "prato";
+        items[16][1] = "com restos de peixe do jantar de ontem";
+        
+        items[17][0] = "lixeira";
+        items[17][1] = "há muito lixo, a camareira ainda não passou aqui";
+        
+        items[18][0] = "lamparina";
+        items[18][1] = "acesa, um casal pode ter tido uma bela noite romântica neste quarto";
+        
+        items[19][0] = "mala grande";
+        items[19][1] = "está estufada, isso é suspeito...";
+        
+        items[20][0] = "chave";
+        items[20][1] = "parece ser a chave eletrônica do quarto";
+        
+        items[21][0] = "poltrona";
+        items[21][1] = "cara, parece uma poltrona de massagem de tão confortável";
+        
+        items[22][0] = "telefone";
+        items[22][1] = "mais antigo que o Atari";
+        
+        items[23][0] = "caixa";
+        items[23][1] = "o que pode estar escondido aqui?";
+        
 
-        return itens;
+        return items;
 
     }
 

@@ -31,6 +31,7 @@ public class TrackReader
      * with the given suffix.
      * @param folder The folder to look for files.
      * @param suffix The suffix of the audio type.
+     * @return the list of songs in the audios folder.
      */
     public ArrayList<Track> readTracks(String folder, String suffix)
     {

@@ -47,6 +47,9 @@ public class Game {
 
     /**
      * Create the game and initialise its internal map.
+     *
+     * @param language selected by user in GUI.
+     * @param difficulty selected by user in GUI.
      */
     public Game(String language, String difficulty) {
         this.language = new Language(language);
@@ -71,19 +74,20 @@ public class Game {
     /**
      * Arrow a difficulty.
      *
+     * @param difficulty chosed by player.
      * @return initial dog happiness level and snacks.
      */
     public final int setDifficulty(String difficulty) {
 
         switch (difficulty) {
             case "easy":
-                return 25;
+                return 50;
 
             case "normal":
-                return 12;
+                return 25;
 
             case "hard":
-                return 6;
+                return 15;
         }
         return 0;
     }
@@ -91,13 +95,13 @@ public class Game {
     public final int setHappinesslvl(String difficulty) {
         switch (difficulty) {
             case "easy":
-                return 30;
+                return 45;
 
             case "normal":
-                return 18;
+                return 28;
 
             case "hard":
-                return 12;
+                return 18;
 
         }
         return 0;
@@ -108,7 +112,7 @@ public class Game {
      */
     private void loadGame() {
         createRooms();
-        createItens();
+        createItems();
         createScenery();
         createPrimaryObjective();
         createSecondaryObjective();
@@ -223,38 +227,33 @@ public class Game {
     /**
      * creates all the items.
      */
-    private void createItens() {
+    private void createItems() {
 
         // create the items
-        LightItem laptop, cellphone, carpet, curtain, table, frame, chair;
-        HeavyItem bed, airConditioner, bookcase, tv, minibar, safeBox;
-
-        bed = new HeavyItem(language.items()[0][0], language.items()[0][1], 71.3);
-        itens.add(bed);
-        laptop = new LightItem(language.items()[1][0], language.items()[1][1], 1.84);
-        itens.add(laptop);
-        cellphone = new LightItem(language.items()[2][0], language.items()[2][1], 0.14);
-        itens.add(cellphone);
-        carpet = new LightItem(language.items()[3][0], language.items()[3][1], 2);
-        itens.add(carpet);
-        curtain = new LightItem(language.items()[4][0], language.items()[4][1], 3.2);
-        itens.add(curtain);
-        table = new LightItem(language.items()[5][0], language.items()[5][1], 7.4);
-        itens.add(table);
-        frame = new LightItem(language.items()[6][0], language.items()[6][1], 2.6);
-        itens.add(frame);
-        chair = new LightItem(language.items()[7][0], language.items()[7][1], 5.83);
-        itens.add(chair);
-        airConditioner = new HeavyItem(language.items()[8][0], language.items()[8][1], 16);
-        itens.add(airConditioner);
-        bookcase = new HeavyItem(language.items()[9][0], language.items()[9][1], 123.2);
-        itens.add(bookcase);
-        tv = new HeavyItem(language.items()[10][0], language.items()[10][1], 33);
-        itens.add(tv);
-        minibar = new HeavyItem(language.items()[11][0], language.items()[11][1], 46.9);
-        itens.add(minibar);
-        safeBox = new HeavyItem(language.items()[12][0], language.items()[12][1], 13.5);
-        itens.add(safeBox);
+        itens.add(new HeavyItem(language.items()[0][0], language.items()[0][1], 71.3));     // bed
+        itens.add(new LightItem(language.items()[1][0], language.items()[1][1], 1.84));     // laptop
+        itens.add(new LightItem(language.items()[2][0], language.items()[2][1], 0.14));     // cellphone
+        itens.add(new LightItem(language.items()[3][0], language.items()[3][1], 2));        // carpet
+        itens.add(new LightItem(language.items()[4][0], language.items()[4][1], 3.2));      // curtain
+        itens.add(new LightItem(language.items()[5][0], language.items()[5][1], 7.4));      // table
+        itens.add(new LightItem(language.items()[6][0], language.items()[6][1], 2.6));      // frame
+        itens.add(new LightItem(language.items()[7][0], language.items()[7][1], 5.83));     // chair
+        itens.add(new HeavyItem(language.items()[8][0], language.items()[8][1], 16));       // air conditioner
+        itens.add(new HeavyItem(language.items()[9][0], language.items()[9][1], 123.2));    // bookcase
+        itens.add(new HeavyItem(language.items()[10][0], language.items()[10][1], 33));     // tv
+        itens.add(new HeavyItem(language.items()[11][0], language.items()[11][1], 46.9));   // minibar
+        itens.add(new HeavyItem(language.items()[12][0], language.items()[12][1], 13.5));   // safe box
+        itens.add(new HeavyItem(language.items()[13][0], language.items()[13][1], 23.3));   // backpack
+        itens.add(new LightItem(language.items()[14][0], language.items()[14][1], 5.8));    // handbag
+        itens.add(new LightItem(language.items()[15][0], language.items()[15][1], 0.6));    // cup
+        itens.add(new LightItem(language.items()[16][0], language.items()[16][1], 4.7));    // dish
+        itens.add(new HeavyItem(language.items()[17][0], language.items()[17][1], 11.9));   // trash can
+        itens.add(new HeavyItem(language.items()[18][0], language.items()[18][1], 10.2));   // lamp
+        itens.add(new HeavyItem(language.items()[19][0], language.items()[19][1], 29.1));   // big suitcase
+        itens.add(new LightItem(language.items()[20][0], language.items()[20][1], 0.3));    // key
+        itens.add(new HeavyItem(language.items()[21][0], language.items()[21][1], 68.4));   // armchair
+        itens.add(new LightItem(language.items()[22][0], language.items()[22][1], 9.2));    // telephone
+        itens.add(new HeavyItem(language.items()[23][0], language.items()[23][1], 16.8));   // box
     }
 
     /**
@@ -264,8 +263,8 @@ public class Game {
 
         Random random = new Random();
         for (Room room : rooms) {
-            // Defines the minimum and maximum items that the room can have, in this case minimum 2 and maximum 5.
-            for (int i = -2; i < random.nextInt(3); i++) {
+            // Defines the minimum and maximum items that the room can have, in this case minimum 4 and maximum 7.
+            for (int i = -4; i < random.nextInt(3); i++) {
 
                 boolean check = false;
                 while (!check) {
@@ -662,7 +661,7 @@ public class Game {
     /**
      * auxiliary method to automatically drop items into the police car.
      */
-    public void dropItensInThePoliceCar() {
+    public void dropItemsInPoliceCar() {
         String[] itemsInBackPack = new String[player.getNumItemsInBackpack()];
         int i = 0;
 
@@ -745,7 +744,7 @@ public class Game {
             } else if (nextRoom.getShortDescription().equals(language.rooms()[20])) {
 
                 checkItemsInPoliceCar();
-                dropItensInThePoliceCar();
+                dropItemsInPoliceCar();
 
                 if (policeCar.easterEggWin(chosenEasterEggItems, player.getBackpack()).isEmpty()) {
                     language.evidenceDone();

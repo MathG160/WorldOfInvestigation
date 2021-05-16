@@ -83,48 +83,81 @@ public class English implements InterfaceLang {
     // these are the items that can be found randomly.
     @Override
     public String[][] items() {
-        String[][] itens = new String[13][2];
+        String[][] items = new String[24][2];
 
-        itens[0][0] = "bed";
-        itens[0][1] = "the most comfortable in the world";
+        items[0][0] = "bed";
+        items[0][1] = "the most comfortable in the world";
 
-        itens[1][0] = "laptop";
-        itens[1][1] = "powerful but limited";
+        items[1][0] = "laptop";
+        items[1][1] = "powerful but limited";
 
-        itens[2][0] = "cellphone";
-        itens[2][1] = "high-end iphone";
+        items[2][0] = "cellphone";
+        items[2][1] = "high-end iphone";
 
-        itens[3][0] = "carpet";
-        itens[3][1] = "very soft and cozy";
+        items[3][0] = "carpet";
+        items[3][1] = "very soft and cozy";
 
-        itens[4][0] = "curtain";
-        itens[4][1] = "helps to hide the sunlight";
+        items[4][0] = "curtain";
+        items[4][1] = "helps to hide the sunlight";
 
-        itens[5][0] = "table";
-        itens[5][1] = "with a rest of food";
+        items[5][0] = "table";
+        items[5][1] = "with some accessories";
 
-        itens[6][0] = "frame";
-        itens[6][1] = "a painting by Vincent Van Gogh";
+        items[6][0] = "frame";
+        items[6][1] = "a painting by Vincent Van Gogh";
 
-        itens[7][0] = "chair";
-        itens[7][1] = "very good for the spine and contributes to posture";
+        items[7][0] = "chair";
+        items[7][1] = "very good for the spine and contributes to posture";
 
-        itens[8][0] = "air conditioner";
-        itens[8][1] = "nobody can live in this heat";
+        items[8][0] = "air conditioner";
+        items[8][1] = "nobody can live in this heat";
 
-        itens[9][0] = "bookcase";
-        itens[9][1] = "beautiful books are here";
+        items[9][0] = "bookcase";
+        items[9][1] = "beautiful books are here";
 
-        itens[10][0] = "tv";
-        itens[10][1] = "we are watching the 2022 cup here";
+        items[10][0] = "tv";
+        items[10][1] = "we are watching the 2022 cup here";
 
-        itens[11][0] = "minibar";
-        itens[11][1] = "a drink goes well, but the price is absurd";
+        items[11][0] = "minibar";
+        items[11][1] = "a drink goes well, but the price is absurd";
 
-        itens[12][0] = "safe box";
-        itens[12][1] = "where we keep precious items";
+        items[12][0] = "safe box";
+        items[12][1] = "where we keep precious items";
 
-        return itens;
+        items[13][0] = "backpack";
+        items[13][1] = "it looks old, but it is very bulky";
+
+        items[14][0] = "handbag";
+        items[14][1] = "has gold details, it must be worth a fortune";
+
+        items[15][0] = "cup";
+        items[15][1] = "someone drank an orange juice here yesterday";
+
+        items[16][0] = "dish";
+        items[16][1] = "with leftover fish from yesterday's dinner";
+
+        items[17][0] = "trash can";
+        items[17][1] = "there is a lot of garbage, the room maid has not passed here yet";
+
+        items[18][0] = "lamp";
+        items[18][1] = "lit, a couple may have had a beautiful romantic night in this room";
+
+        items[19][0] = "big suitcase";
+        items[19][1] = "is stuffed, this is suspicious ...";
+
+        items[20][0] = "key";
+        items[20][1] = "seems to be the electronic key of the room";
+
+        items[21][0] = "armchair";
+        items[21][1] = "man, it looks like a massage chair, so comfortable";
+
+        items[22][0] = "telephone";
+        items[22][1] = "older than Atari";
+
+        items[23][0] = "box";
+        items[23][1] = "what can be hidden here?";
+
+        return items;
 
     }
 

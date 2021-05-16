@@ -83,48 +83,81 @@ public class Spanish implements InterfaceLang {
     // estos son los elementos que se pueden encontrar al azar.
     @Override
     public String[][] items() {
-        String[][] itens = new String[13][2];
+        String[][] items = new String[24][2];
 
-        itens[0][0] = "cama";
-        itens[0][1] = "el más cómodo del mundo";
+        items[0][0] = "cama";
+        items[0][1] = "el más cómodo del mundo";
 
-        itens[1][0] = "laptop";
-        itens[1][1] = "poderoso, pero limitado";
+        items[1][0] = "laptop";
+        items[1][1] = "poderoso, pero limitado";
 
-        itens[2][0] = "celda";
-        itens[2][1] = "iphone de primera línea";
+        items[2][0] = "celda";
+        items[2][1] = "iphone de primera línea";
 
-        itens[3][0] = "estera";
-        itens[3][1] = "muy suave y acogedor";
+        items[3][0] = "estera";
+        items[3][1] = "muy suave y acogedor";
 
-        itens[4][0] = "cortina";
-        itens[4][1] = "ayuda a ocultar la luz del sol";
+        items[4][0] = "cortina";
+        items[4][1] = "ayuda a ocultar la luz del sol";
 
-        itens[5][0] = "mesa";
-        itens[5][1] = "con un resto de comida";
+        items[5][0] = "mesa";
+        items[5][1] = "con algunos accesorios";
 
-        itens[6][0] = "cuadro";
-        itens[6][1] = "una pintura de Vincent Van Gogh";
+        items[6][0] = "cuadro";
+        items[6][1] = "una pintura de Vincent Van Gogh";
 
-        itens[7][0] = "silla";
-        itens[7][1] = "muy bueno para la columna y contribuye a la postura";
+        items[7][0] = "silla";
+        items[7][1] = "muy bueno para la columna y contribuye a la postura";
 
-        itens[8][0] = "aire condicionado";
-        itens[8][1] = "nadie puede vivir en este calor";
+        items[8][0] = "aire condicionado";
+        items[8][1] = "nadie puede vivir en este calor";
 
-        itens[9][0] = "estantería";
-        itens[9][1] = "hermosos libros están aquí";
+        items[9][0] = "estanteria";
+        items[9][1] = "hermosos libros están aquí";
 
-        itens[10][0] = "televisor";
-        itens[10][1] = "estamos viendo la copa 2022 aquí";
+        items[10][0] = "televisor";
+        items[10][1] = "estamos viendo la copa 2022 aquí";
 
-        itens[11][0] = "minibar";
-        itens[11][1] = "un trago va bien, pero el precio es absurdo";
+        items[11][0] = "minibar";
+        items[11][1] = "un trago va bien, pero el precio es absurdo";
 
-        itens[12][0] = "caja fuerte";
-        itens[12][1] = "donde guardamos objetos preciosos";
+        items[12][0] = "caja fuerte";
+        items[12][1] = "donde guardamos objetos preciosos";
 
-        return itens;
+        items[13][0] = "mochila";
+        items[13][1] = "parece viejo, pero es muy voluminoso";
+
+        items[14][0] = "bolsa";
+        items[14][1] = "tiene detalles dorados, debe valer una fortuna";
+
+        items[15][0] = "taza";
+        items[15][1] = "alguien bebió un jugo de naranja aquí ayer";
+
+        items[16][0] = "plato";
+        items[16][1] = "con sobras de pescado de la cena de ayer";
+
+        items[17][0] = "bote de basura";
+        items[17][1] = "hay mucha basura, la criada no ha pasado por aquí todavía";
+
+        items[18][0] = "lampara";
+        items[18][1] = "iluminada, una pareja puede haber tenido una hermosa noche romántica en esta habitación";
+
+        items[19][0] = "maleta grande";
+        items[19][1] = "está relleno, esto es sospechoso ...";
+
+        items[20][0] = "clave";
+        items[20][1] = "parece ser la llave electrónica de la habitación";
+
+        items[21][0] = "sillon";
+        items[21][1] = "hombre, parece un sillón de masaje, tan cómodo";
+
+        items[22][0] = "telefono";
+        items[22][1] = "mas viejo que Atari";
+
+        items[23][0] = "caja";
+        items[23][1] = "¿Qué se puede esconder aquí?";
+
+        return items;
 
     }
 

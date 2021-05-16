@@ -18,11 +18,12 @@ public class CommandWords {
 
     /**
      * Constructor - initialise the command words.
+     *
      * @param commands string of valid commands, according to the language.
      */
-    public CommandWords(String [] commands ) {
-        validCommands = new String [commands.length];
-        System.arraycopy(commands, 0, validCommands, 0, validCommands.length);        
+    public CommandWords(String[] commands) {
+        validCommands = new String[commands.length];
+        System.arraycopy(commands, 0, validCommands, 0, validCommands.length);
     }
 
     /**
@@ -66,8 +67,13 @@ public class CommandWords {
 
     }
 
+    /**
+     * Return all valid commands as a Array of String.
+     *
+     * @return List of valid commands
+     */
     public String[] getArrayVallidCommands() {
         return validCommands;
     }
-    
+
 }

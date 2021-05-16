@@ -26,12 +26,16 @@ public class GameStart {
             }
         }
 
-        Game game = new Game(gui.getGuiLanguage(), gui.getGuiDifficulty());
-
         /*
-         * play game!
+         * create and play game!
          */
-        game.play();
+        try {
+            Game game = new Game(gui.getGuiLanguage(), gui.getGuiDifficulty());
+            game.play();
+        } catch (Exception e) {
+            System.err.println("An unforeseen happened! Inform the following message to the developer: " + e.toString());
+            System.exit(0);
+        }
     }
 
 }

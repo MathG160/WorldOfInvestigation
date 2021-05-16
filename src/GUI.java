@@ -12,7 +12,7 @@ import javax.swing.*;
 public class GUI {
 
     // version of GUI game
-    private static final String VERSION = "Version Alpha 1.0";
+    private static final String VERSION = "Final Version 1.0";
 
     // instance variables 
     private JFrame frame;
@@ -153,12 +153,15 @@ public class GUI {
 
     }
 
+    /**
+     * Creates the frame of language config.
+     */
     public void makeFrameLanguage() {
-        JFrame frame;
-        frame = new JFrame("Select Language");
+        JFrame languageFrame;
+        languageFrame = new JFrame("Select Language");
 
         // container
-        Container contentPanel = frame.getContentPane();
+        Container contentPanel = languageFrame.getContentPane();
 
         contentPanel.setLayout(new BorderLayout(6, 6));
 
@@ -171,7 +174,7 @@ public class GUI {
             button.addActionListener(new ActionListener() {
                 public void actionPerformed(ActionEvent e) {
                     language = "english";
-                    frame.dispose();
+                    languageFrame.dispose();
                 }
             });
             toolbar.add(button);
@@ -180,7 +183,7 @@ public class GUI {
             button.addActionListener(new ActionListener() {
                 public void actionPerformed(ActionEvent e) {
                     language = "portuguese";
-                    frame.dispose();
+                    languageFrame.dispose();
                 }
             });
             toolbar.add(button);
@@ -189,7 +192,7 @@ public class GUI {
             button.addActionListener(new ActionListener() {
                 public void actionPerformed(ActionEvent e) {
                     language = "spanish";
-                    frame.dispose();
+                    languageFrame.dispose();
                 }
             });
             toolbar.add(button);
@@ -200,16 +203,19 @@ public class GUI {
         contentPanel.add(panel, BorderLayout.CENTER);
 
         // place this frame at the center of the screen and show
-        frame.pack();
-        frame.setVisible(true);
+        languageFrame.pack();
+        languageFrame.setVisible(true);
     }
 
+    /**
+     * Creates the frame of difficulty config.
+     */
     public void makeFrameDifficulty() {
-        JFrame frame;
-        frame = new JFrame("Select Dilfficulty");
+        JFrame difficultyFrame;
+        difficultyFrame = new JFrame("Select Dilfficulty");
 
         // container
-        Container contentPanel = frame.getContentPane();
+        Container contentPanel = difficultyFrame.getContentPane();
 
         contentPanel.setLayout(new BorderLayout(6, 6));
 
@@ -222,7 +228,7 @@ public class GUI {
             button.addActionListener(new ActionListener() {
                 public void actionPerformed(ActionEvent e) {
                     difficulty = "easy";
-                    frame.dispose();
+                    difficultyFrame.dispose();
                 }
             });
             toolbar.add(button);
@@ -231,7 +237,7 @@ public class GUI {
             button.addActionListener(new ActionListener() {
                 public void actionPerformed(ActionEvent e) {
                     difficulty = "normal";
-                    frame.dispose();
+                    difficultyFrame.dispose();
                 }
             });
             toolbar.add(button);
@@ -240,7 +246,7 @@ public class GUI {
             button.addActionListener(new ActionListener() {
                 public void actionPerformed(ActionEvent e) {
                     difficulty = "hard";
-                    frame.dispose();
+                    difficultyFrame.dispose();
                 }
             });
             toolbar.add(button);
@@ -251,14 +257,20 @@ public class GUI {
         contentPanel.add(panel, BorderLayout.CENTER);
 
         // place this frame at the center of the screen and show
-        frame.pack();
-        frame.setVisible(true);
+        difficultyFrame.pack();
+        difficultyFrame.setVisible(true);
     }
 
+    /**
+     * Return the language selected in GUI.
+     */
     public String getGuiLanguage() {
         return language;
     }
 
+    /**
+     * Return the difficulty selected in GUI.
+     */
     public String getGuiDifficulty() {
         return difficulty;
     }

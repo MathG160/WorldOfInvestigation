@@ -13,7 +13,7 @@ public class Player {
     private Room currentRoom;
     private int snacks;
     private int happinesslvl;
-    private ArrayList<LightItem> backpack;
+    private final ArrayList<LightItem> backpack;
     private double backpackWeight;
 
     public Player(int snacks, int happinesslvl) {
@@ -73,6 +73,8 @@ public class Player {
 
     /**
      * backpack management methods.
+     * @param item to be inserted in the backpack.
+     * @return 
      */    
     public boolean addItemBackpack(LightItem item) {
         if ((backpackWeight + item.getWeight()) > 10) {
